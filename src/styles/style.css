@@ -1,0 +1,60 @@
+.container{
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  .logo{
+    font-weight: bold;
+    color: #3B3B98;
+  }
+  .logo-image {
+  max-width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+  .logo-text {
+  font-weight: bold;
+  color: #000000;
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+  .form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .input{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+  .checkboxLabel{
+    font-size: 14px;
+    text-align: left;
+  }
+  .button{
+    padding: 10px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .googleButton{
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .divider{
+    margin: 10px 0;
+    font-size: 14px;
+    color: #777;
+  }
+  .link{
+    color: #6c5ce7;
+    text-decoration: none;
+  }
