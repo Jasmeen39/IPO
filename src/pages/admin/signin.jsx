@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import '../../styles/style.css';
 import logo from '../../assets/logo.jpeg';
 
-export default function Signup() {
+export default function Signin() {
     const [formData, setFormData] = useState({
-        name: "",
         email: "",
         password: "",
         isHuman: false,
+        keepSignedIn: false,
     });
 
     const handleChange = (e) => {
@@ -26,7 +26,7 @@ export default function Signup() {
         }
         // For now, just log the form data
         console.log("Form Submitted:", formData);
-        alert("Registered successfully!");
+        alert("Login successful");
     };
 
     return (
@@ -36,17 +36,10 @@ export default function Signup() {
                 <span className="logo-text">BLUESTOCK</span>
             </div>
 
-            <h3 class="text-3xl text-red">Create an account</h3>
+            
             <form onSubmit={handleSubmit} className="form">
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="input"
-                    required
-                />
+                <div className="field-group">
+                <label>Email</label>
                 <input
                     type="email"
                     name="email"
@@ -56,6 +49,10 @@ export default function Signup() {
                     className="input"
                     required
                 />
+                </div>
+                <div className="field-group">
+                    <label>Password</label>
+                    <a href="#" className="forgot-link">Forgot Password?</a>
                 <input
                     type="password"
                     name="password"
@@ -65,6 +62,8 @@ export default function Signup() {
                     className="input"
                     required
                 />
+                
+                </div>
                 <label className="checkboxLabel">
                     <input
                         type="checkbox"
@@ -74,20 +73,28 @@ export default function Signup() {
                     />{" "}
                     I'm not a robot
                 </label>
+                <label className="checkbox-keep">
+          <input
+            type="checkbox"
+            name="keepSignedIn"
+            checked={formData.keepSignedIn}
+            onChange={handleChange}
+          />
+          Keep me signed in
+        </label>
                 <button type="submit" className="button">
-                    Sign up
+                    Login
                 </button>
-                <div className="divider">or sign up with</div>
+                <div className="divider">or sign in with</div>
                 <button type="button" className="googleButton">
                     Continue with Google
                 </button>
             </form>
-            <p>
-                Already have an account?{" "}
-                <a href="/admin/signin" className="link">
-                    Sign in here
+                <a href="/admin/signup" className="link">
+                   Create an account
                 </a>
-            </p>
+            
         </div>
     );
 }
+

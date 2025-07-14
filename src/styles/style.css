@@ -9,7 +9,7 @@
     font-weight: bold;
     color: #3B3B98;
   }
-  .logo-image {
+  /* .logo-image {
   max-width: 40px;
   height: 40px;
   margin-top: 10px;
@@ -19,6 +19,24 @@
   color: #000000;
   font-size: 30px;
   margin-bottom: 100px;
+} */
+ .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  max-width: 35px;
+  height: 35px;
+}
+
+.logo-text {
+  font-weight: bold;
+  color: #000;
+  font-size: 24px;
 }
   .form{
     display: flex;
@@ -26,14 +44,41 @@
     gap: 10px;
   }
   .input{
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     border-radius: 6px;
   }
+  .field-group {
+  position: relative;
+  text-align: left;
+}
+.field-group label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
   .checkboxLabel{
     font-size: 14px;
     text-align: left;
   }
+  .forgot-link {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 12px;
+  color: #6c5ce7;
+  text-decoration: none;
+}
+.checkbox-keep {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-align: left;
+}
   .button{
     padding: 10px;
     background-color: #6c5ce7;
