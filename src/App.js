@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Register from "./pages/admin/signup";
 import Login from "./pages/admin/signin";
+import ForgetPassword from "./pages/admin/forgetpassword"
 // import other pages if needed
 // import Login from "./pages/admin/login";
 // import Dashboard from "./pages/admin/dashboard";
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/admin/signup" element={<Register />} />
         <Route path="/admin/signin" element={<Login />} />
+        <Route path="/admin/forgetpassword" element={<ForgetPassword />} />
         {/* Other routes */}
         {/* <Route path="/admin/login" element={<Login />} /> */}
         {/* <Route path="/admin/dashboard" element={<Dashboard />} /> */}

@@ -52,7 +52,7 @@ export default function Signin() {
                 </div>
                 <div className="field-group">
                     <label>Password</label>
-                    <a href="#" className="forgot-link">Forgot Password?</a>
+                    <a href="/admin/forgetpassword" className="forgot-link">Forgot Password?</a>
                 <input
                     type="password"
                     name="password"
